@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      SONAR_HOST_URL: https://sonarcloud.io
     strategy:
       matrix:
         python: ["3.12"]
@@ -34,6 +35,12 @@ jobs:
       - name: Run tox
         run: tox -e py
 
+      - name: Verify coverage report
+        run: |
+          ls -la
+          test -f coverage.xml
+          echo "coverage.xml found"
+
       - name: SonarQube Scan
         if: ${{ env.SONAR_TOKEN != '' }}
         uses: SonarSource/sonarqube-scan-action@2f77a1ec69fb1d595b06f35ab27e97605bdef703 # v5
@@ -42,4 +49,4 @@ jobs:
             -Dsonar.sources=codegen_poc
             -Dsonar.tests=tests
             -Dsonar.test.inclusions=tests/**/*.py
-            -Dsonar.python.coverage.reportPaths=coverage.xml
+            -Dsonar.python.coverage.reportPaths=coverage.xml,.tox/py/coverage.xml
