@@ -96,3 +96,5 @@ pytest --cov=codegen_poc --cov-report=term-missing --cov-report=xml --cov-config
 Artifacts:
 - `coverage.xml` for CI upload/integration
 - terminal missing-lines report for local debugging
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=azhezyz_2AA4_Bonus2&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=azhezyz_2AA4_Bonus2)
