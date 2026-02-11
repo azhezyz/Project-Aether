@@ -9,26 +9,26 @@ pub = Publisher()
 a1, a2 = Author(), Author()
 copy1, copy2 = Copy(), Copy()
 
-book.publishedby__publisher = pub
-book.add_writtenby__author(a1)
-book.add_writtenby__author(a2)
+book.publishedby_publisher = pub
+book.add_writtenby_author(a1)
+book.add_writtenby_author(a2)
 
-copy1.iscopyof__book = book
-copy2.iscopyof__book = book
+copy1.iscopyof_book = book
+copy2.iscopyof_book = book
 
-lib.add_stores__copy(copy1)
-lib.add_stores__copy(copy2)
+lib.add_stores_copy(copy1)
+lib.add_stores_copy(copy2)
 
 # Loan
 loan = Loan()
 loan.borrower__member = member
-loan.forcopy__copy = copy1
-member.add_hasloan__loan(loan)
+loan.forceps_copy = copy1
+member.add_hasloan_loan(loan)
 
 # Optional fine
 fine = Fine()
-loan.maycreate__fine = fine
+loan.maycreate_fine = fine
 
-print("Library copies:", len(lib.stores__copy))
-print("Member loans:", len(member.hasloan__loan))
-print("Book authors:", len(book.writtenby__author))
+print("Library copies:", len(lib.stores_copy))
+print("Member loans:", len(member.hasloan_loan))
+print("Book authors:", len(book.writtenby_author))

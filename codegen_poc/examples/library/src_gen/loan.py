@@ -1,11 +1,11 @@
-﻿# generated file - PoC
+# generated file - PoC
 from __future__ import annotations
 
-from dataclasses import dataclass
-from typing import Optional
+from dataclasses import dataclass, field
+from typing import Optional, List
 
 @dataclass
 class Loan(object):
-    forcopy__copy: Optional["Copy"] = None
-    borrower__member: Optional["Member"] = None
-    maycreate__fine: Optional["Fine"] = None
+    forcopy_copy: Optional["Copy"] = None
+    borrower_member: Optional["Member"] = None
+    maycreate_fine: Optional["Fine"] = None

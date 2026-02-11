@@ -40,6 +40,7 @@ jobs:
           ls -la
           test -f coverage.xml
           echo "coverage.xml found"
+          grep -n "<class " coverage.xml | head -n 3
 
       - name: Sonar token check
         if: ${{ env.SONAR_TOKEN == '' }}
@@ -50,9 +51,3 @@ jobs:
       - name: SonarQube Scan
         if: ${{ env.SONAR_TOKEN != '' }}
         uses: SonarSource/sonarqube-scan-action@2f77a1ec69fb1d595b06f35ab27e97605bdef703 # v5
-        with:
-          args: >
-            -Dsonar.sources=codegen_poc
-            -Dsonar.tests=tests
-            -Dsonar.test.inclusions=tests/**/*.py
-            -Dsonar.python.coverage.reportPaths=coverage.xml,.tox/py/coverage.xml

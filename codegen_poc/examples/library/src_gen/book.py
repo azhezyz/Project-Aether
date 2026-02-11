@@ -4,16 +4,13 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Optional, List
 
-from .author import Author
-from .publisher import Publisher
-
 @dataclass
 class Book(object):
-    writtenby__author: List[Author] = field(default_factory=list)
-    publishedby__publisher: Optional[Publisher] = None
+    writtenby_author: List["Author"] = field(default_factory=list)
+    publishedby_publisher: Optional["Publisher"] = None
 
-    def add_writtenby__author(self, item: Author) -> None:
-        self.writtenby__author.append(item)
+    def add_writtenby_author(self, item: "Author") -> None:
+        self.writtenby_author.append(item)
 
-    def remove_writtenby__author(self, item: Author) -> None:
-        self.writtenby__author.remove(item)
+    def remove_writtenby_author(self, item: "Author") -> None:
+        self.writtenby_author.remove(item)
