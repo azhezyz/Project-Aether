@@ -41,6 +41,12 @@ jobs:
           test -f coverage.xml
           echo "coverage.xml found"
 
+      - name: Sonar token check
+        if: ${{ env.SONAR_TOKEN == '' }}
+        run: |
+          echo "::warning::SONAR_TOKEN is empty, so SonarQube Scan is skipped."
+          echo "::warning::Add repository secret SONAR_TOKEN or run on a context where secrets are available."
+
       - name: SonarQube Scan
         if: ${{ env.SONAR_TOKEN != '' }}
         uses: SonarSource/sonarqube-scan-action@2f77a1ec69fb1d595b06f35ab27e97605bdef703 # v5
