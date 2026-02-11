@@ -97,4 +97,10 @@ Artifacts:
 - `coverage.xml` for CI upload/integration
 - terminal missing-lines report for local debugging
 
+## Status Badges
+
+[![Build](https://github.com/azhezyz/2AA4_Bonus2/actions/workflows/build.yml/badge.svg)](https://github.com/azhezyz/2AA4_Bonus2/actions/workflows/build.yml)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=azhezyz_2AA4_Bonus2&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=azhezyz_2AA4_Bonus2)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=azhezyz_2AA4_Bonus2&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=azhezyz_2AA4_Bonus2)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=azhezyz_2AA4_Bonus2&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=azhezyz_2AA4_Bonus2)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=azhezyz_2AA4_Bonus2&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=azhezyz_2AA4_Bonus2)
