@@ -1,0 +1,100 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.8">
+  <diagram name="library" id="cC2oz54CYzgHMP0nowV-">
+    <mxGraphModel dx="49759" dy="33828" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Library" vertex="1" />
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Book" vertex="1" />
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Member" vertex="1" />
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Loan" vertex="1" />
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Author" vertex="1" />
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Publisher" vertex="1" />
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Copy" vertex="1" />
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Librarian" vertex="1" />
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Fine" vertex="1" />
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-10" edge="1" parent="1" source="q56iyAUJuYNRCFtSEkm7-1" style="endArrow=classic;html=1;" target="q56iyAUJuYNRCFtSEkm7-7" value="stores (N)" />
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-11" edge="1" parent="1" source="q56iyAUJuYNRCFtSEkm7-7" style="endArrow=classic;html=1;" target="q56iyAUJuYNRCFtSEkm7-2" value="isCopyOf (1)" />
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-12" edge="1" parent="1" source="q56iyAUJuYNRCFtSEkm7-2" style="endArrow=classic;html=1;" target="q56iyAUJuYNRCFtSEkm7-5" value="writtenBy (N)" />
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-13" edge="1" parent="1" source="q56iyAUJuYNRCFtSEkm7-2" style="endArrow=classic;html=1;" target="q56iyAUJuYNRCFtSEkm7-6" value="publishedBy (1)" />
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-14" edge="1" parent="1" source="q56iyAUJuYNRCFtSEkm7-3" style="endArrow=classic;html=1;" target="q56iyAUJuYNRCFtSEkm7-4" value="hasLoan (N)" />
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-15" edge="1" parent="1" source="q56iyAUJuYNRCFtSEkm7-4" style="endArrow=classic;html=1;" target="q56iyAUJuYNRCFtSEkm7-7" value="forCopy (1)" />
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-16" edge="1" parent="1" source="q56iyAUJuYNRCFtSEkm7-4" style="endArrow=classic;html=1;" target="q56iyAUJuYNRCFtSEkm7-3" value="borrower (1)" />
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-17" edge="1" parent="1" source="q56iyAUJuYNRCFtSEkm7-1" style="endArrow=classic;html=1;" target="q56iyAUJuYNRCFtSEkm7-8" value="employs (N)" />
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-18" edge="1" parent="1" source="q56iyAUJuYNRCFtSEkm7-4" style="endArrow=classic;html=1;" target="q56iyAUJuYNRCFtSEkm7-9" value="mayCreate (1)" />
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="Library" vertex="1">
+          <mxGeometry height="60" width="140" x="-36333.22216796875" y="-25508.666666666668" as="geometry" />
+        </mxCell>
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="Book" vertex="1">
+          <mxGeometry height="60" width="140" x="-36573.22216796875" y="-25508.666666666668" as="geometry" />
+        </mxCell>
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="Member" vertex="1">
+          <mxGeometry height="60" width="140" x="-36093.22216796875" y="-25508.666666666668" as="geometry" />
+        </mxCell>
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="Copy" vertex="1">
+          <mxGeometry height="60" width="140" x="-36573.22216796875" y="-25368.666666666668" as="geometry" />
+        </mxCell>
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="Loan" vertex="1">
+          <mxGeometry height="60" width="140" x="-36093.22216796875" y="-25368.666666666668" as="geometry" />
+        </mxCell>
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="Author" vertex="1">
+          <mxGeometry height="60" width="140" x="-36733.22216796875" y="-25368.666666666668" as="geometry" />
+        </mxCell>
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="Publisher" vertex="1">
+          <mxGeometry height="60" width="140" x="-36573.22216796875" y="-25659.99666666667" as="geometry" />
+        </mxCell>
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="Librarian" vertex="1">
+          <mxGeometry height="60" width="140" x="-36333.22216796875" y="-25659.99666666667" as="geometry" />
+        </mxCell>
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="Fine" vertex="1">
+          <mxGeometry height="60" width="140" x="-36093.22216796875" y="-25228.666666666668" as="geometry" />
+        </mxCell>
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-28" edge="1" parent="1" source="q56iyAUJuYNRCFtSEkm7-19" style="endArrow=classic;html=1;rounded=0;" target="q56iyAUJuYNRCFtSEkm7-22" value="stores (N)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-29" edge="1" parent="1" source="q56iyAUJuYNRCFtSEkm7-22" style="endArrow=classic;html=1;rounded=0;" target="q56iyAUJuYNRCFtSEkm7-20" value="isCopyOf (1)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-30" edge="1" parent="1" source="q56iyAUJuYNRCFtSEkm7-20" style="endArrow=classic;html=1;rounded=0;" target="q56iyAUJuYNRCFtSEkm7-24" value="writtenBy (N)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-31" edge="1" parent="1" source="q56iyAUJuYNRCFtSEkm7-20" style="endArrow=classic;html=1;rounded=0;" target="q56iyAUJuYNRCFtSEkm7-25" value="publishedBy (1)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-32" edge="1" parent="1" source="q56iyAUJuYNRCFtSEkm7-21" style="endArrow=classic;html=1;rounded=0;" target="q56iyAUJuYNRCFtSEkm7-23" value="hasLoan (N)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-33" edge="1" parent="1" source="q56iyAUJuYNRCFtSEkm7-23" style="endArrow=classic;html=1;rounded=0;" target="q56iyAUJuYNRCFtSEkm7-22" value="forCopy (1)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-34" edge="1" parent="1" source="q56iyAUJuYNRCFtSEkm7-23" style="endArrow=classic;html=1;rounded=0;" target="q56iyAUJuYNRCFtSEkm7-21" value="borrower (1)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-35" edge="1" parent="1" source="q56iyAUJuYNRCFtSEkm7-19" style="endArrow=classic;html=1;rounded=0;" target="q56iyAUJuYNRCFtSEkm7-26" value="employs (N)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q56iyAUJuYNRCFtSEkm7-36" edge="1" parent="1" source="q56iyAUJuYNRCFtSEkm7-23" style="endArrow=classic;html=1;rounded=0;" target="q56iyAUJuYNRCFtSEkm7-27" value="mayCreate (1)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
