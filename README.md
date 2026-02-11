@@ -73,3 +73,26 @@ Quick checks:
 2. confirm class nodes are `mxCell` with `vertex="1"`
 3. regenerate into a clean output folder
 4. run client with the same Python interpreter used for generation
+
+## Coverage Uplink
+
+To add test coverage into the build pipeline, this project now uses:
+- `tox` for test orchestration
+- `pytest` for test execution
+- `pytest-cov` / Coverage.py for coverage measurement
+
+Run:
+
+```bash
+tox
+```
+
+Equivalent direct command:
+
+```bash
+pytest --cov=codegen_poc --cov-report=term-missing --cov-report=xml --cov-config=tox.ini --cov-branch
+```
+
+Artifacts:
+- `coverage.xml` for CI upload/integration
+- terminal missing-lines report for local debugging
