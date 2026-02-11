@@ -207,3 +207,4 @@ pytest --cov=codegen_poc --cov-report=term-missing --cov-report=xml --cov-config
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=azhezyz_2AA4_Bonus2&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=azhezyz_2AA4_Bonus2)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=azhezyz_2AA4_Bonus2&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=azhezyz_2AA4_Bonus2)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=azhezyz_2AA4_Bonus2&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=azhezyz_2AA4_Bonus2)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=azhezyz_2AA4_Bonus2&metric=coverage)](https://sonarcloud.io/summary/new_code?id=azhezyz_2AA4_Bonus2)
