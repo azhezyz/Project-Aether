@@ -1,4 +1,10 @@
-﻿# STARFORGE PROTOCOL: draw.io -> Python Codegen
+[![Build](https://github.com/azhezyz/2AA4_Bonus2/actions/workflows/build.yml/badge.svg)](https://github.com/azhezyz/2AA4_Bonus2/actions/workflows/build.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=azhezyz_2AA4_Bonus2&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=azhezyz_2AA4_Bonus2)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=azhezyz_2AA4_Bonus2&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=azhezyz_2AA4_Bonus2)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=azhezyz_2AA4_Bonus2&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=azhezyz_2AA4_Bonus2)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=azhezyz_2AA4_Bonus2&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=azhezyz_2AA4_Bonus2)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=azhezyz_2AA4_Bonus2&metric=coverage)](https://sonarcloud.io/summary/new_code?id=azhezyz_2AA4_Bonus2)
+ # STARFORGE PROTOCOL: draw.io -> Python Codegen
 
 [English](#english) | [中文](#中文)
 
@@ -200,11 +206,3 @@ pytest --cov=codegen_poc --cov-report=term-missing --cov-report=xml --cov-config
 - `coverage.xml`：用于 CI 上传/集成
 - 终端 missing-lines 报告：用于本地排查
 
-## Status Badges
-
-[![Build](https://github.com/azhezyz/2AA4_Bonus2/actions/workflows/build.yml/badge.svg)](https://github.com/azhezyz/2AA4_Bonus2/actions/workflows/build.yml)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=azhezyz_2AA4_Bonus2&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=azhezyz_2AA4_Bonus2)
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=azhezyz_2AA4_Bonus2&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=azhezyz_2AA4_Bonus2)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=azhezyz_2AA4_Bonus2&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=azhezyz_2AA4_Bonus2)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=azhezyz_2AA4_Bonus2&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=azhezyz_2AA4_Bonus2)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=azhezyz_2AA4_Bonus2&metric=coverage)](https://sonarcloud.io/summary/new_code?id=azhezyz_2AA4_Bonus2)
